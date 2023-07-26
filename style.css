@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--Light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.container {
+    background-color: white;
+    padding: 1.25rem;
+    box-shadow: 0rem 1rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.text-container {
+    height: 9rem;
+    padding: 0.5rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.container img {
+    margin-bottom: 1rem;
+}
+
+.container .text-container .top-title {
+    font-size: 1.700rem;
+    font-weight: 700;
+    color: var(--Dark-blue);
+    margin-bottom: 1.250rem;
+}
+
+.container .text-container .description {
+    display: block;
+    color: var(--Grayish-blue);
+    font-size: 1.10rem;
+    margin-bottom: 1.250rem;
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 370px;
+    }
+}
